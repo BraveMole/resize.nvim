@@ -51,47 +51,47 @@ M.isTopMost = function()
 end
 
 M.ResizeLeft = function()
-	if M.isRightMost() then
-		if not M.isLeftMost() then
-			vim.cmd([[wincmd 5 >]])
-		end
-	else
-		vim.cmd([[wincmd 5 <]])
-	end
+	-- if M.isRightMost() then
+	-- 	if not M.isLeftMost() then
+	-- 		vim.cmd([[wincmd 5 >]])
+	-- 	end
+	-- else
+	-- 	vim.cmd([[wincmd 5 <]])
+	-- end
 end
 
 M.ResizeRight = function()
-	if M.isRightMost() then
-		if not M.isLeftMost() then
-			vim.cmd([[wincmd 5 <]])
-		end
-	else
-		vim.cmd([[wincmd 5 >]])
-	end
+	-- if M.isRightMost() then
+	-- 	if not M.isLeftMost() then
+	-- 		vim.cmd([[wincmd 5 <]])
+	-- 	end
+	-- else
+	-- 	vim.cmd([[wincmd 5 >]])
+	-- end
 end
 
 M.ResizeUp = function()
-	if M.isBottomMost() then
-		if not M.isTopMost() then
-			vim.cmd([[wincmd 5 +]])
-		else
-			vim.cmd([[wincmd 5 -]])
-		end
-	else
-		vim.cmd([[wincmd 5 -]])
-	end
+	-- if M.isBottomMost() then
+	-- 	if not M.isTopMost() then
+	-- 		vim.cmd([[wincmd 5 +]])
+	-- 	else
+	-- 		vim.cmd([[wincmd 5 -]])
+	-- 	end
+	-- else
+	-- 	vim.cmd([[wincmd 5 -]])
+	-- end
 end
 
 M.ResizeDown = function()
-	if M.isBottomMost() then
-		if not M.isTopMost() then
-			vim.cmd([[wincmd 5 -]])
-		else
-			vim.cmd([[wincmd 5 +]])
-		end
-	else
-		vim.cmd([[wincmd 5 +]])
-	end
+	-- if M.isBottomMost() then
+	-- 	if not M.isTopMost() then
+	-- 		vim.cmd([[wincmd 5 -]])
+	-- 	else
+	-- 		vim.cmd([[wincmd 5 +]])
+	-- 	end
+	-- else
+	-- 	vim.cmd([[wincmd 5 +]])
+	-- end
 end
 
 return M
